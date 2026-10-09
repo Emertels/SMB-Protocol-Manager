@@ -2,6 +2,8 @@
 
 ## 1.0.0 — 2026-10-09
 
+- Organizes the docs into a PT-BR primary README and a separate English version, with guidance tailored to this project’s options and workflow.
+
 - Updates the run instructions to point directly to the correct project entry point.
 
 - Preserves the numbered menu for checking and changing SMB states.

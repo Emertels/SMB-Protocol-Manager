@@ -1,12 +1,14 @@
-# SMB Protocol Manager
-
-**Version:** 1.0.0  
-**Interface languages:** Brazilian Portuguese, English, Spanish, French, German, Italian, Japanese, Korean, Simplified Chinese, and Russian. Language follows Windows UI culture; Brazilian Portuguese is the fallback.
-
-## What it does
+# 🌐 SMB Protocol Manager
 
 Inspect and manage SMB protocol and server settings on Windows.
 
+[![Português (Brasil)](https://img.shields.io/badge/DOCUMENTA%C3%87%C3%83O-PORTUGU%C3%8AS%20(BRASIL)-green?style=for-the-badge)](README.md) [![Documentation](https://img.shields.io/badge/DOCUMENTATION-ENGLISH-0070F3?style=for-the-badge)](README-EN.md)
+
+![Version](https://img.shields.io/badge/Version-v1.0.0-blue?style=flat-square) ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square) ![Platform](https://img.shields.io/badge/Platform-Windows-0078D4?style=flat-square) ![Languages](https://img.shields.io/badge/Languages-10%20auto--detected-2ea44f?style=flat-square)
+
+[Portuguese changelog](CHANGELOG-PT-BR.md) · [English changelog](CHANGELOG-EN.md) · [MIT License](LICENSE)
+
+---
 ## Files
 
 SMB-Protocol-Manager.ps1 and Session-Header.ps1
@@ -20,34 +22,26 @@ SMB-Protocol-Manager.ps1 and Session-Header.ps1
 
 Windows 10 or Windows 11, Windows PowerShell 5.1, and administrator privileges. SMB cmdlets depend on features available in your Windows edition.
 
-## Safety and limitations
+## Menu options
 
-The project must not remove personal data, credentials, or content outside paths defined by the tool. Command and feature availability depends on Windows edition and version. Review CHANGELOG.md before updating.
+Check status before changing settings; changes require confirmation and administrator rights. **1–3:** inspect, enable, or disable the Windows SMBv1 feature. **4–6:** inspect, enable, or disable incoming SMBv1 server connections. **7–9:** inspect, enable, or disable incoming SMBv2/3 server connections. **0:** exit. The Windows feature and server setting are separate layers. SMBv1 is legacy and less secure; enable it only when an older device requires it on a trusted network, then disable it again. Some changes require a restart.
 
-## Development
+### Available languages
 
-See AGENTS-PT-BR.md and AGENTS-EN.md. The default interface language follows Windows UI culture; Brazilian Portuguese is the fallback.
+Detected from Windows settings; Brazilian Portuguese is the fallback.
 
-## Languages, purpose, and tips
-
-Menus, confirmations, status labels, and tool messages are translated into all ten languages. Error details supplied by Windows may use the system language.
-
-SMBv1 is legacy and vulnerable: keep it disabled and enable it only temporarily on a controlled network for legacy equipment. Enabling it requires typed confirmation. Changes may require a restart.
-
-### Idiomas disponíveis / Available languages
-
-| Language | Locale | Used for |
-|---|---|---|
-| Brazilian Portuguese | pt-BR | Brazilian Windows; fallback for unsupported locales |
-| English | en | English Windows |
-| Spanish | es | Spanish Windows |
-| French | fr | French Windows |
-| German | de | German Windows |
-| Italian | it | Italian Windows |
-| Japanese | ja | Japanese Windows |
-| Korean | ko | Korean Windows |
-| Simplified Chinese | zh-CN | Simplified Chinese Windows |
-| Russian | ru | Russian Windows |
+| Language | Locale | Typical system |
+|---|---|
+| Brazilian Portuguese | pt-BR | Brazilian Windows; also the fallback language. |
+| English | en | English Windows. |
+| Spanish | es | Spanish Windows. |
+| French | fr | French Windows. |
+| German | de | German Windows. |
+| Italian | it | Italian Windows. |
+| Japanese | ja | Japanese Windows. |
+| Korean | ko | Korean Windows. |
+| Simplified Chinese | zh-CN | Simplified Chinese Windows. |
+| Russian | ru | Russian Windows. |
 
 ## 👨‍💻 About the Author
 
